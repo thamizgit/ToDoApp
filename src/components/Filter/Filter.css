@@ -1,0 +1,72 @@
+.filter-container{
+    margin:1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    justify-content: space-evenly;
+}
+.filter-container button{
+    padding: 5px;
+    width: 75px;
+    border:none;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.filter-container button.low{
+    border: 2px solid #00FF00;
+    color:#00FF00;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.filter-container button.medium{
+    border: 2px solid #FFC40C;
+    color: #FFC40C;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.filter-container button.high{
+     border: 2px solid red;
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.filter-container button.all{
+    border: 2px solid black;
+    color:black;
+    font-weight:bold ;
+    font-size: 0.9rem;
+}
+.filter-container .filter{
+    font-weight: bold;
+    font-size: 0.9rem;
+     padding: 5px;
+    width: 75px;
+}
+.filter-container button.low.active{
+    background-color: #00FF00;
+    color:white;
+}
+.filter-container button.medium.active{
+    background-color: #FFC40C;
+    color:white;
+}
+.filter-container button.high.active{
+    background-color: red;
+    color:white;
+}
+.filter-container button.all.active{
+    background-color:black;
+    color:white;
+}
+
+@media screen and (max-width:572px){
+    .filter-container{
+        flex-flow: row wrap;
+        row-gap: 0.5rem;
+    }
+}

@@ -1,0 +1,114 @@
+.new-item-card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 7px 20px grey;
+    border-radius: 10px;
+
+}
+.new-item-card{
+    display: flex;
+    align-items: center;
+    padding:25px;
+    background-color: white;
+    border-radius: 5px 5px;
+}
+.new-item-card .checkbox{
+    margin-right:20px;
+
+}
+.new-item-card .form-container{
+    flex-grow: 1;
+}
+.new-item-card input{
+    width:100%;
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+.new-item-card input:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size:1rem;
+    font-weight: 600;
+
+}
+.new-item-card-buttons{
+    display: flex;
+    flex-direction: row;
+    margin:1rem;
+    column-gap: 2rem;
+    margin-left:20px;
+    
+}
+.new-item-card-buttons .button{
+    padding:10px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out ;
+}
+.new-item-card-buttons .button.primary{
+    background-color: rgb(50, 152, 50);
+    color:whitesmoke;
+    border-radius:5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.new-item-card-buttons .button.clear{
+    background-color: #FFC328;
+    color:whitesmoke;
+    border-radius:5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.new-item-card-buttons .button:hover{
+    box-shadow: 2px 10px 10px grey;
+   
+}
+.new-item-card-container .new-item-card-priority{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 2rem;
+    margin-left: 20px;
+    transition: all 0.5s ease-in;
+}
+.new-item-card-container .new-item-card-priority button{
+    padding: 5px;
+    width: 75px;
+    border:none;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.new-item-card-container .new-item-card-priority button.low{
+    border: 2px solid #00FF00;
+    color:#00FF00;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.new-item-card-container .new-item-card-priority button.medium{
+    border: 2px solid #FFC40C;
+    color: #FFC40C;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.new-item-card-container .new-item-card-priority button.high{
+    border: 2px solid red;
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.new-item-card-container .new-item-card-priority button.low.active{
+    color:white;
+    background-color: #00FF00;
+}
+.new-item-card-container .new-item-card-priority button.medium.active{
+    color:white;
+    background-color: #FFC40C;
+}
+.new-item-card-container .new-item-card-priority button.high.active{
+    color:white;
+    background-color: red;
+}
